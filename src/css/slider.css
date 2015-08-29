@@ -10,7 +10,7 @@
 .inf-bg-image { /* Actual animation div. */
 	background: url(../img/slider.png);
 	height: 32px;
-	width: 2991px;
+	width: 3210px;
 		
 	position: absolute;
 	left: 0;
@@ -26,7 +26,7 @@
 		left: 0;
 	}
 	100% {
-		left: -1960px;
+		left: -1605px;
 	}
 }
 
@@ -35,12 +35,12 @@
 		left: 0;
 	}
 	100% {
-		left: -1960px;
+		left: -1605px;
 	}
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
 	.inf-bg-image { /* Actual animation div. */
 	background: url(../img/slider@2x.png);
-	background-size: 2991px 32px; /* Match dimensions of 'standard' div */
+	background-size: 3210px 32px; /* Match dimensions of 'standard' div */
 }

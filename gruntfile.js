@@ -11,6 +11,9 @@ module.exports = function(grunt) {
 			files: ['src/*.html']
 		},
 		csslint: {
+			options: {
+				important: false
+			},
 			src: ['src/css/tcs.css']
 		},
 		cssmin: {

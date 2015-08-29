@@ -1,35 +1,17 @@
+header {
+	padding: 3px;
+}
+
 .container {
 	min-width: 1070px!important;
 	width: 70%;
 }
-
-/*.navbar-nav a { 
-  padding: 20px 15px; 
-}
-
-.nav .icon-link { 
-  padding: 10px 8px;    
-}*/
 
 .icon { /* Allow the SVG icon links to actually display. */
   display: block;
   width: 32px;
   height: 32px;
 }
-
-address {
-	display: inline-block;
-	margin: 43px 3px 8px 3px; /* Need spacing for relatively positioned slider. */
-}
-
-header {
-	border-bottom: thin solid black;
-}
-
-/*.page-header {
-	border: none;
-	margin: 0;
-}*/
 
 footer small {
 	border-top: thin solid black;
