@@ -3,276 +3,167 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-    "width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
     <title>
     the component store - 'Simply Resourceful'
     </title><!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href=
-      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link href="css/styles.min.css" rel="stylesheet">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <script src="js/picturefill.min.js"></script>
-    </head>
-    <body>
-      <header>
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed"
-              data-toggle="collapse" data-target=
-              "#tcs-navbar-collapse-1" aria-expanded=
-              "false"><span class="sr-only">Toggle
-              navigation</span></button> <a class="navbar-brand"
-              href="#"><img src=
-              "data:image/png;base64,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
-              "
-            alt="tcs brand" width="195" height="24"></a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/styles.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script>
+    
+    /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+    
+    grunticon(["css/icons.data.svg.css", "css/icons.data.png.css", "css/icons.fallback.css"]);
+    </script>
+    <noscript><link href="css/icons.fallback.css" rel="stylesheet"></noscript>
+    <script src="js/picturefill.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- The mobile navbar-toggle button can be safely removed since you do not need it in a non-responsive implementation -->
+            <a class="navbar-brand" href="#"><img srcset="img/brand.png 1x, img/brand@2x.png 2x"></a>
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id=
-            "tcs-navbar-collapse-1">
+          <!-- Note that the .navbar-collapse and .collapse classes have been removed from the #navbar -->
+          <div id="navbar">
             <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="#">Home <span class=
-                "sr-only">(current)</span></a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
+              <!-- <li class="active"><a href="#">home</a></li>
+              <li><a href="#about">about 'tcs'</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle=
-                  "dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">Services</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">services&nbsp;<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">PCBs
-                    <small>(Rigid/Flex)</small></a>
-                  </li>
-                  <li>
-                    <a href="#">Polymer Stencils</a>
-                  </li>
-                  <li>
-                    <a href="#">Magnetics</a>
-                  </li>
-                  <li>
-                    <a href="#">Test Equipment</a>
-                  </li>
+                  <li><a href="#">PCBs <small>(rigid/flex)</small></a></li>
+                  <li><a href="#">Polymer Stencils</a></li>
+                  <li><a href="#">Magnetics</a></li>
+                  <li><a href="#">Test Equipment</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#">Quality</a>
-              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contact us&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a></li>
+                  <li><a href="tel:16024030343">6024030343</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">get quote</a></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle=
-                  "dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">Get Quote</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">PCBs
-                    <small>(Rigid/Flex)</small></a>
-                  </li>
-                  <li>
-                    <a href="#">Polymer Stencils</a>
-                  </li>
-                  <li>
-                    <a href="#">Magnetics</a>
-                  </li>
-                  <li>
-                    <a href="#">Test Equipment</a>
-                  </li>
+              <li><a href="#" class="icon-link"><span class="icon icon-fb img-circle"></span>
+              <li><a href="#" class="icon-link"><span class="icon icon-li img-circle"></span>
+              <li><a href="#" class="icon-link"><span class="icon icon-tw img-circle"></span>
+              <li><a href="#" class="icon-link"><span class="icon icon-gp img-circle"></span>
+            </a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <div class="container">
+        <div class="inf-bg-img-slider">
+          <div class="inf-bg-image">
+            <span class="sr-only">A horizontal scrolling list of manufacturer logos: </span>
+          </div>
+        </div>
+        <address>
+          <a href=
+            "mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>&nbsp;•&nbsp;<a href="tel:16024030343">602.403.0343</a></address>
+            
+            <i>Technology. Speed. Commitment. <a href=
+              "#"><span class="text-uppercase">Quality.</span></a></i>
+            </div>
+            
+          </header>
+          <div class="container">
+            <div class="row">
+              <nav class="col-xs-2">
+                <!-- Remove the default list-style and left margin on list items. (http://getbootstrap.com/css/#helper-classes) -->
+                <ul class="list-unstyled">
+                  <li role="presentation" class="active"><a href="index.html">home</a></li>
+                  <li role="presentation"><a href="about.html">about 'tcs'</a></li>
+                  <li role="presentation"><a href="barge-line.html">services</a></li>
+                  <li role="presentation"><a href="barge-mgmt.html">quality</a></li>
+                  <li role="presentation"><a href="contact.html">contact us</a></li>
                 </ul>
-              </li>
-            </ul>
-            </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-          <address><a href="mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>&nbsp;&bull;&nbsp;<a href="tel:16024030343">602.403.0343</a><address><i>Technology. Speed. Commitment. <a href="#"><span class="text-uppercase">Quality.</span></i>
-        </header>
-        <main>
-        <div class="container">
-          <!-- <h1>the component store - <i>Simply Reourceful!</i></h1>
-          <h2>Technology. Speed. Commitment. <a href="#"><span class="text-uppercase">Quality.</span></a></h2> -->
-          <div class="row">
-            <figure class="col-xs-6">
-              <a href="#">
-                <img srcset="img/tap-targets/rigid-pcbs.jpg 1x, img/tap-targets/rigid-pcbs@2x.jpg 2x" alt="" class="img-circle img-responsive">
-              <figcaption class="text-center">Rigid PCBs</figcaption></a></figure>
-              <figure class="col-xs-6">
-                <a href="#">
-                  <img srcset="img/tap-targets/magnetics.jpg 1x, img/tap-targets/magnetics@2x.jpg 2x" alt="" class="img-circle img-responsive">
-                <figcaption class="text-center">Magnetics</figcaption></a></figure>
-                <figure class="col-xs-6 col-xs-offset-3">
-                  <a href="#">
-                    <img srcset="img/tap-targets/stencils.jpg 1x, img/tap-targets/stencils@2x.jpg 2x" alt="" class="img-circle img-responsive">
-                  <figcaption class="text-center">Stencils</figcaption></a></figure>
+              </nav>
+              <div class="col-xs-10">
+                <div class="row">
                   <figure class="col-xs-6">
-                    <a href="#">
-                      <img srcset="img/tap-targets/flex-circuits.jpg 1x, img/tap-targets/flex-circuits@2x.jpg 2x" alt="" class="img-circle img-responsive">
-                    <figcaption class="text-center">Flex Circuits</figcaption></a></figure>
-                    <figure class="col-xs-6"><a href="#">
-                      <img srcset="img/tap-targets/test.jpg 1x, img/tap-targets/test@2x.jpg 2x" alt="" class="img-circle img-responsive">
-                    <figcaption class="text-center">Test Equipment</figcaption></a></figure>
-                  </div>
+                    <a href="#"><img srcset=
+                      "img/rigid-pcb.jpg 1x, img/rigid-pcb@2x.jpg 2x"
+                      alt="" class="img-circle img-responsive">
+                      <figcaption class="text-center">
+                      Rigid PCBs
+                    </figcaption></a>
+                  </figure>
+                  <figure class="col-xs-6">
+                    <a href="#"><img srcset=
+                      "img/magnetic.jpg 1x, img/magnetic@2x.jpg 2x"
+                      alt="" class="img-circle img-responsive">
+                      <figcaption class="text-center">
+                      Magnetics
+                    </figcaption></a>
+                  </figure>
                 </div>
-                </main>
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src=
-                "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-                </script> <!-- Latest compiled and minified JavaScript -->
-                <script src=
-                "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-                </script> <script src="js/script.min.js">
-                </script>
-              </body>
-            </html>
+                <div class="row">
+                  <figure class="col-xs-offset-3 col-xs-6 col-xs-offset-3">
+                    <a href="#"><img srcset=
+                      "img/stencil.jpg 1x, img/stencil@2x.jpg 2x"
+                      alt="" class="img-circle img-responsive">
+                      <figcaption class="text-center">
+                      Stencils
+                    </figcaption></a>
+                  </figure>
+                </div>
+                <div class="row">
+                  <figure class="col-xs-6">
+                    <a href="#"><img srcset=
+                      "img/flex-circuit.jpg 1x, img/flex-circuit@2x.jpg 2x"
+                      alt="" class="img-circle img-responsive">
+                      <figcaption class="text-center">
+                      Flex Circuits
+                    </figcaption></a>
+                  </figure>
+                  <figure class="col-xs-6">
+                    <a href="#"><img srcset=
+                      "img/test-equip.jpg 1x, img/test-equip@2x.jpg 2x"
+                      alt="" class="img-circle img-responsive">
+                      <figcaption class="text-center">
+                      Test Equipment
+                    </figcaption></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            </div> <!-- /container -->
+            
+            <footer>
+              <div class="container">
+                &copy;2015 <i>the component store</i> (tcs) - 'Simply Resourceful'<br>
+                <a href=
+                  "mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>&nbsp;•&nbsp;<a href="tel:16024030343">602.403.0343</a></address>
+                  
+                  <i>Technology. Speed. Commitment. <a href=
+                    "#"><span class="text-uppercase">Quality.</span></a></i>
+                    <small>Website Hosting &amp; Design by: <a href="http://visionwebsoft.com" target="_blank">Vision WebSoft - <code>var greatResults = yourVision(ourCode);</code></small>
+                    </div>
+                  </footer>
+                  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+                  </script> <!-- Latest compiled and minified JavaScript -->
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+                  </script> <script src="js/script.min.js">
+                  </script>
+                </body>
+              </html>

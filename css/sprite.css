@@ -1,0 +1,55 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-flex-circuits {
+  background-image: url(../img/icons/spritesheet.services.jpg);
+  background-position: -209px 0px;
+  width: 202px;
+  height: 140px;
+}
+.icon-magnetics {
+  background-image: url(../img/icons/spritesheet.services.jpg);
+  background-position: -186px -140px;
+  width: 156px;
+  height: 140px;
+}
+.icon-rigid-pcbs {
+  background-image: url(../img/icons/spritesheet.services.jpg);
+  background-position: 0px 0px;
+  width: 209px;
+  height: 140px;
+}
+.icon-stencils {
+  background-image: url(../img/icons/spritesheet.services.jpg);
+  background-position: 0px -140px;
+  width: 186px;
+  height: 140px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  .icon-flex-circuits {
+    background-image: url(../img/icons/spritesheet.services@2x.jpg);
+    background-size: 411px 280px;
+  }
+  .icon-magnetics {
+    background-image: url(../img/icons/spritesheet.services@2x.jpg);
+    background-size: 411px 280px;
+  }
+  .icon-rigid-pcbs {
+    background-image: url(../img/icons/spritesheet.services@2x.jpg);
+    background-size: 411px 280px;
+  }
+  .icon-stencils {
+    background-image: url(../img/icons/spritesheet.services@2x.jpg);
+    background-size: 411px 280px;
+  }
+}
