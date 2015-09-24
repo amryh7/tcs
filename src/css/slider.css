@@ -17,8 +17,8 @@
 	top: 0;
 	height: 100%;
 	
-  -webkit-animation: slider 60s linear infinite;
-	animation: slider 60s linear infinite;
+  -webkit-animation: slider 6s bounce infinite;
+	animation: slider 6s bounce infinite;
 }
 
 @-webkit-keyframes slider {

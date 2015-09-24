@@ -7,6 +7,18 @@ header {
 	width: 70%;
 }
 
+.tcs-slogans {
+	display: inline;
+}
+
+.tcs-nav-inline li { /* Line up 'get quote' and social icons horizontally. */
+	display: inline-block;
+	vertical-align: middle;
+}
+.tcs-nav-inline li a {
+	padding: 10px;
+}
+
 .icon { /* Allow the SVG icon links to actually display. */
   display: block;
   width: 32px;

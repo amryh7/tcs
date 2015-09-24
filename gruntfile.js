@@ -31,17 +31,11 @@ module.exports = function(grunt) {
 					minifyJS: true
 				},
 				files: { // Dictionary of files 
-					'index.html': 'src/index.html', // 'destination': 'source' 
+					'index.html': 'src/index.html',
+					'about-tcs.html': 'src/about-tcs.html', // 'destination': 'source' 
+					'get-a-quote/rigid-pcbs.html': 'src/get-a-quote/rigid-pcbs.html', // 'destination': 'source' 
 				}
 			},
-			dev: { // Another target 
-				// options: {
-				// 	lint: true
-				// },
-				files: {
-					'index.html': 'src/index.html'
-				}
-			}
 		},
 		sprite: {
 			services: {
@@ -83,7 +77,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			html: {
-				files: ['src/*.html'],
+				files: ['src/**/*.html'],
 				tasks: ['bootlint', 'htmlmin'],
 				options: {
 					// Start a live reload server on the default port 35729
@@ -116,7 +110,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Register task(s)
-	grunt.registerTask('default', ['bootlint', 'htmlmin:dev', 'csslint', 'cssmin', 'jshint','uglify:dev']);
+	grunt.registerTask('default', ['bootlint', 'htmlmin', 'csslint', 'cssmin', 'jshint','uglify:dev']);
 	grunt.registerTask('dist', ['htmlmin:dist', 'uglify:dist']);
 	grunt.registerTask('spriteGen', ['sprite'])
 };
