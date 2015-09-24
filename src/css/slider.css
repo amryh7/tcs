@@ -1,5 +1,5 @@
 /* Manufacturing Logo Sliders */
-.inf-bg-img-slider { /* Relative positioning to just hide the overflow */
+.inf-bg-img-slider {  /* Relative positioning to just hide the overflow */
 	height: 32px;
 	overflow: hidden;
 	
@@ -7,7 +7,7 @@
 /*	top: 43px;
 */}
 
-.inf-bg-image { /* Actual animation div. */
+.inf-bg-image {  /* Actual animation div. */
 	background: url(../img/slider.png);
 	height: 32px;
 	width: 3210px;
@@ -17,8 +17,8 @@
 	top: 0;
 	height: 100%;
 	
-  -webkit-animation: slider 6s bounce infinite;
-	animation: slider 6s bounce infinite;
+  -webkit-animation:  slider 60s linear infinite;
+	animation:  slider 60s linear infinite;
 }
 
 @-webkit-keyframes slider {
