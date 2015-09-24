@@ -1,33 +1,32 @@
-header {
+/*header {
 	padding: 3px;
 }
-
-.container {
-	min-width: 1070px!important;
-	width: 70%;
-}
-
-.tcs-slogans {
+*/
+/*.tcs-slogans {
 	display: inline;
-}
+}*/
 
-.tcs-nav-inline li { /* Line up 'get quote' and social icons horizontally. */
+/* Line up 'get quote' and social icons horizontally. */
+.tcs-nav-inline li { 
 	display: inline-block;
 	vertical-align: middle;
-}
-.tcs-nav-inline li a {
+} 
+
+
+/*.tcs-nav-inline li a {
 	padding: 10px;
 }
+*/
 
-.icon { /* Allow the SVG icon links to actually display. */
+.icon { 
   display: block;
   width: 32px;
   height: 32px;
 }
 
-footer small {
+/*footer small {
 	border-top: thin solid black;
 	display: block;
 	margin-top: 8px;
 	padding-top: 8px;
-}
+}*/
