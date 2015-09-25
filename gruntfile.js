@@ -35,6 +35,7 @@ module.exports = function(grunt) {
 					'about-tcs.html': 'src/about-tcs.html', // 'destination': 'source' 
 					'contact-tcs.html': 'src/contact-tcs.html', // 'destination': 'source' 
 					'get-a-quote/rigid-pcbs.html': 'src/get-a-quote/rigid-pcbs.html', // 'destination': 'source' 
+					'get-a-quote/flex-circuits.html': 'src/get-a-quote/flex-circuits.html', // 'destination': 'source' 
 					'get-a-quote/polymer-stencils.html': 'src/get-a-quote/polymer-stencils.html', // 'destination': 'source' 
 					'get-a-quote/magnetics.html': 'src/get-a-quote/magnetics.html', // 'destination': 'source' 
 					'get-a-quote/test-equipment.html': 'src/get-a-quote/test-equipment.html' // 'destination': 'source' 
