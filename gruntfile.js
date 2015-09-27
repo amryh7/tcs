@@ -34,11 +34,14 @@ module.exports = function(grunt) {
 					'index.html': 'src/index.html',
 					'about-tcs.html': 'src/about-tcs.html', // 'destination': 'source' 
 					'contact-tcs.html': 'src/contact-tcs.html', // 'destination': 'source' 
-					'get-a-quote/rigid-pcbs.html': 'src/get-a-quote/rigid-pcbs.html', // 'destination': 'source' 
-					'get-a-quote/flex-circuits.html': 'src/get-a-quote/flex-circuits.html', // 'destination': 'source' 
+					'get-a-quote/pcbs.html': 'src/get-a-quote/pcbs.html', // 'destination': 'source' 
 					'get-a-quote/polymer-stencils.html': 'src/get-a-quote/polymer-stencils.html', // 'destination': 'source' 
 					'get-a-quote/magnetics.html': 'src/get-a-quote/magnetics.html', // 'destination': 'source' 
-					'get-a-quote/test-equipment.html': 'src/get-a-quote/test-equipment.html' // 'destination': 'source' 
+					'get-a-quote/test-equipment.html': 'src/get-a-quote/test-equipment.html', // 'destination': 'source'
+					'services/pcbs.html': 'src/services/pcbs.html', // 'destination': 'source' 
+					'services/polymer-stencils.html': 'src/services/polymer-stencils.html', // 'destination': 'source' 
+					'services/magnetics.html': 'src/services/magnetics.html', // 'destination': 'source' 
+					'services/test-equipment.html': 'src/services/test-equipment.html' // 'destination': 'source' 
 				}
 			},
 		},
