@@ -31,9 +31,8 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-
-    <header class="row">
+  <header class="container-fluid">
+    <div class="row">
       <div class="col-xs-6">
         <a href="index.html"><img srcset="img/brand.png 1x, img/brand@2x.png 2x" src="img/brand.png" alt="the component store logo in Eyehawk font, skewed, red lettering, with black brush script underneath reading: 'Simply Resourceful'"></a>
       </div>
@@ -59,8 +58,10 @@
           </ul>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
+  <div class="container">
     <div class="row">
       <nav class="col-xs-2">
         <!-- Remove the default list-style and left margin on list items. (http://getbootstrap.com/css/#helper-classes) -->
@@ -93,7 +94,7 @@
         </ul>
       </nav>
 
-      <div class="col-xs-10">
+      <main class="col-xs-10">
         <h1>quality</h1>
         <p><img src="img/db2.jpg" alt="African American man with glasses inspecting a component"
           width="150" height="100" class="img-rounded pull-right">‘the component
@@ -183,8 +184,8 @@
             <a href="http://smta.org/" target="blank"><span class="text-hide">SMTA</span><span class="icon icon-smta"></span></a></div>
           <div class="col-xs-3">
             <a href="http://www.ipc.org/" target="blank"><span class="text-hide">IPC</span><span class="icon icon-IPC"></span></a></div>
-          <div class="col-xs-3"> <img srcset="img/recycle.png 1x, img/recycle@2x.png 2x" src="img/recycle.png"
-          alt="Recycling logo" width="32" height="31"></div>
+          <div class="col-xs-3"> <img srcset="img/recycle.png 1x, img/recycle.png 2x" src="img/recycle.png"
+            alt="Recycling logo" width="32" height="31"></div>
         </div>
 
         <footer>
@@ -196,12 +197,12 @@
 
           <small>Website Hosting &amp; Design by: <a href="http://visionwebsoft.com" target="_blank">Vision WebSoft - <code>var greatResults = yourVision(ourCode);</code></a></small>
         </footer>
-      </div>
+      </main>
       <!-- /col-xs-10 -->
     </div>
     <!-- /row -->
   </div>
-  <!-- /container-fluid -->
+  <!-- /container -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
