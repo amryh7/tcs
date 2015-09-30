@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 			options: {
 				important: false
 			},
-			src: ['src/css/tcs.css']
+			src: ['src/css/tcs.css', 'src/css/slider.css']
 		},
 		cssmin: {
 			target: {
@@ -33,7 +33,8 @@ module.exports = function(grunt) {
 				files: { // Dictionary of files 
 					'index.html': 'src/index.html',
 					'about-tcs.html': 'src/about-tcs.html', // 'destination': 'source' 
-					'contact-tcs.html': 'src/contact-tcs.html', // 'destination': 'source' 
+					'contact-tcs.html': 'src/contact-tcs.html', // 'destination': 'source'
+					'quality.html': 'src/quality.html', // 'destination': 'source' 
 					'get-a-quote/pcbs.html': 'src/get-a-quote/pcbs.html', // 'destination': 'source' 
 					'get-a-quote/polymer-stencils.html': 'src/get-a-quote/polymer-stencils.html', // 'destination': 'source' 
 					'get-a-quote/magnetics.html': 'src/get-a-quote/magnetics.html', // 'destination': 'source' 

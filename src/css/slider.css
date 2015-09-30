@@ -1,46 +1,52 @@
 /* Manufacturing Logo Sliders */
-.inf-bg-img-slider {  /* Relative positioning to just hide the overflow */
-	height: 32px;
-	overflow: hidden;
-	
-	position: relative;
-/*	top: 43px;
-*/}
 
-.inf-bg-image {  /* Actual animation div. */
-	background: url(../img/slider.png);
-	height: 32px;
-	width: 3210px;
-		
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	
-  -webkit-animation:  slider 60s linear infinite;
-	animation:  slider 60s linear infinite;
+.inf-bg-img-slider {
+  /* Relative positioning to just hide the overflow */
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  /*	top: 43px;
+*/
+}
+
+.inf-bg-image {
+  /* Actual animation div. */
+  background: url(../img/slider.png);
+  height: 32px;
+  width: 3210px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  -moz-animation: slider 60s linear infinite;
+  -webkit-animation: slider 60s linear infinite;
+  animation: slider 60s linear infinite;
 }
 
 @-webkit-keyframes slider {
-	0% {
-		left: 0;
-	}
-	100% {
-		left: -1605px;
-	}
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1605px;
+  }
 }
 
 @keyframes slider {
-	0% {
-		left: 0;
-	}
-	100% {
-		left: -1605px;
-	}
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1605px;
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
-	.inf-bg-image { /* Actual animation div. */
-	background: url(../img/slider@2x.png);
-	background-size: 3210px 32px; /* Match dimensions of 'standard' div */
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi) {
+  .inf-bg-image {
+    /* Actual animation div. */
+    background: url(../img/slider@2x.png);
+    background-size: 3210px 32px;
+    /* Match dimensions of 'standard' div */
+  }
 }
