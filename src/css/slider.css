@@ -5,8 +5,7 @@
   height: 32px;
   overflow: hidden;
   position: relative;
-  /*	top: 43px;
-*/
+  margin: 10px 0 20px 0;
 }
 
 .inf-bg-image {
