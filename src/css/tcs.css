@@ -32,8 +32,6 @@ header {
 main {
 	background: url("../img/bg.jpg") no-repeat center center fixed;
 	background-size: cover;
-	border-radius: 8px;
-
 	padding: 8px 20px;
 }
 
@@ -63,6 +61,10 @@ h3,
 
 .tcs-pull-left {
 	margin-right: 8px;
+}
+
+img {
+	margin: 3px;
 }
 
 .tcs-blockquote {
