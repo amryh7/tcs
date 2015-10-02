@@ -37,6 +37,11 @@ main {
 
 }
 
+main,
+.tcs-blockquote {
+	border-radius: 8px;
+}
+
 h1,
 h2,
 h3 {
@@ -56,4 +61,5 @@ h3 {
 
 .tcs-blockquote {
 	border-color: rgb(237, 28, 36);
+	background: rgba(255, 255, 255, 0.8);
 }
