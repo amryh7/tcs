@@ -28,9 +28,32 @@ header {
   height: 32px;
 }
 
-/*footer small {
-	border-top: thin solid black;
-	display: block;
-	margin-top: 8px;
-	padding-top: 8px;
-}*/
+main {
+	background: url("../img/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	border-radius: 8px;
+
+	padding: 8px 20px;
+
+}
+
+h1,
+h2,
+h3 {
+	color: rgb(237, 28, 36);
+}
+.tcs-img-circle {
+	border: solid thin rgb(224, 247, 254);
+}
+
+.tcs-img-circle:hover {
+		border-width: thick;
+}
+
+.tcs-pull-left {
+	margin-right: 8px;
+}
+
+.tcs-blockquote {
+	border-color: rgb(237, 28, 36);
+}
