@@ -6,7 +6,8 @@ header {
 	padding: 3px;
 }
 
-.tcs-header-address {
+.tcs-header-address,
+.tcs-breadcrumb {
 	margin-bottom: 8px;
 }
 
@@ -34,7 +35,6 @@ main {
 	border-radius: 8px;
 
 	padding: 8px 20px;
-
 }
 
 main,
@@ -46,8 +46,13 @@ h1,
 h2,
 h3,
 .text-uppercase {
-	color: rgb(237, 28, 36);
+	color: rgb(237, 28, 36);	
 }
+
+.tcs-h1 {
+	margin-top: 10px;
+}
+
 .tcs-img-circle {
 	border: solid thin rgb(224, 247, 254);
 }
