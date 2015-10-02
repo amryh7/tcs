@@ -44,7 +44,8 @@ main,
 
 h1,
 h2,
-h3 {
+h3,
+.text-uppercase {
 	color: rgb(237, 28, 36);
 }
 .tcs-img-circle {
@@ -61,5 +62,9 @@ h3 {
 
 .tcs-blockquote {
 	border-color: rgb(237, 28, 36);
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.75);
+}
+
+ul {
+	list-style-position: inside;
 }
