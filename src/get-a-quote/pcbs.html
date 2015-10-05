@@ -113,28 +113,32 @@
             <li class="active">PCBs</li>
           </ol>
           <form>
-            <fieldset>
-              <legend>Info About You</legend>
-              <div class="col-xs-6">
-                <div class="form-group">
+           <fieldset>
+              <legend>personal info</legend>
+
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="fName">First Name</label>
                   <input type="text" class="form-control" id="fName" name="fName">
                 </div>
               </div>
-              <div class="col-xs-6">
-                <div class="form-group">
+
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="lName">Last Name</label>
-                  <input type="text" class="form-control" id="lName" name="lName">
+                  <input type="text" class="form-control" id="lName" name="fName">
                 </div>
               </div>
-              <div class="col-xs-6">
-                <div class="form-group">
+
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="eAddy">Email</label>
                   <input type="email" class="form-control" id="eAddy" name="eAddy">
                 </div>
               </div>
-              <div class="col-xs-6">
-                <div class="form-group">
+
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="fone">Phone</label>
                   <input type="tel" class="form-control" id="fone" name="fone">
                 </div>
@@ -142,27 +146,27 @@
             </fieldset>
 
             <fieldset>
-              <legend>Company Info</legend>
-              <div class="col-xs-6">
-                <div class="form-group">
+              <legend>company info</legend>
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="cName">Company Name</label>
                   <input type="text" class="form-control" id="cName" name="cName">
                 </div>
               </div>
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="address">Address</label>
-                  <input type="text" class="form-control" id="address">
+                  <input type="text" class="form-control" id="address" name="address">
                 </div>
               </div>
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="city">City</label>
-                  <input type="text" class="form-control" id="city">
+                  <input type="text" class="form-control" id="city" name="city">
                 </div>
               </div>
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-2">
                   <label for="st">ST</label>
                   <select class="form-control" id="st" name="st">
                     <option value="">N/A</option>
@@ -221,131 +225,137 @@
                   </select>
                 </div>
               </div>
-              <div class="col-xs-4">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-4">
                   <label for="zip">Zip</label>
-                  <input type="text" class="form-control" id="zip">
+                  <input type="text" class="form-control" id="zip" name="zip">
                 </div>
               </div>
             </fieldset>
 
             <fieldset>
               <legend>PCB Component Info</legend>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBpartNo">Part Number</label>
-                  <input type="text" class="form-control" id="PCBpartNo">
+                  <input type="text" class="form-control" id="PCBpartNo" name="PCBpartNo">
                 </div>
               </div>
 
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBrevNo">Rev Number</label>
-                  <input type="text" class="form-control" id="PCBrevNo">
+                  <input type="text" class="form-control" id="PCBrevNo" name="PCBrevNo">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBmaterial">Material</label>
-                  <input type="text" class="form-control" id="PCBmaterial">
+                  <input type="text" class="form-control" id="PCBmaterial" name="PCBmaterial">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBboardDim">Board Dimensions</label>
-                  <input type="text" class="form-control" id="PCBboardDim">
+                  <input type="text" class="form-control" id="PCBboardDim" name="PCBboardDim">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBlayerCount">Layer Count</label>
-                  <input type="text" class="form-control" id="PCBlayerCount">
+                  <input type="text" class="form-control" id="PCBlayerCount" name="PCBlayerCount">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBcopperWeight">Copper Weight</label>
-                  <input type="text" class="form-control" id="PCBcopperWeight">
+                  <input type="text" class="form-control" id="PCBcopperWeight" name="PCBcopperWeight">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBboardThickness">Overall Board Thickness</label>
-                  <input type="text" class="form-control" id="PCBboardThickness">
+                  <input type="text" class="form-control" id="PCBboardThickness" name="PCBboardThickness">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBminHoleSize">Min Hole Size</label>
-                  <input type="text" class="form-control" id="PCBminHoleSize">
+                  <input type="text" class="form-control" id="PCBminHoleSize" name="PCBminHoleSize">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBminLineWidth">Min Line Width</label>
-                  <input type="text" class="form-control" id="PCBminLineWidth">
+                  <input type="text" class="form-control" id="PCBminLineWidth" name="PCBminLineWidth">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBboardFinish">Board Finish</label>
-                  <input type="text" class="form-control" id="PCBboardFinish">
+                  <input type="text" class="form-control" id="PCBboardFinish" name="PCBboardFinish">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-3">
                   <label for="PCBsolderMask">Soldermask</label>
-                  <input type="text" class="form-control" id="PCBPartNo">
+                  <input type="text" class="form-control" id="PCBsolderMask" name="PCBsolderMask">
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="form-group">
-                  <label for="PCBSilkscreen">PCB SilkScreen</label>
-                  <input type="text" class="form-control" id="PCBSilkScreen">
+              <div class="form-group">
+                <div class="col-xs-3">
+                  <label for="PCBsilkScreen">PCB SilkScreen</label>
+                  <input type="text" class="form-control" id="PCBsilkScreen" name="PCBsilkScreen">
                 </div>
               </div>
 
-              <div class="col-xs-2">
-                <p>Impedance Control?</p>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="impedanceControlYes" name="impedanceControl" value="yes"> Yes
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="impedanceControlNo" name="impedanceControl" value="no"> No
-                </label>
+              <div class="form-group">
+                <div class="col-xs-2">
+                  <p>Impedance Control?</p>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="impedanceControlYes" name="impedanceControl" value="yes"> Yes
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="impedanceControlNo" name="impedanceControl" value="no"> No
+                  </label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <p>Blind/Buried Vias?</p>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="BBviasYes" name="BBvias" value="yes"> Yes
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="BBviasNo" name="BBvias" value="no"> No
-                </label>
+              <div class="form-group">
+                <div class="col-xs-2">
+                  <p>Blind/Buried Vias?</p>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="BBviasYes" name="BBvias" value="yes"> Yes
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="BBviasNo" name="BBvias" value="no"> No
+                  </label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <p>Microvias?</p>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="microviasYes" name="microvias" value="yes"> Yes
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="microviasNo" name="microvias" value="no"> No
-                </label>
+              <div class="form-group">
+                <div class="col-xs-2">
+                  <p>Microvias?</p>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="microviasYes" name="microvias" value="yes"> Yes
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="microviasNo" name="microvias" value="no"> No
+                  </label>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-2">
                   <label for="PCBsingleUnits">Single Units</label>
                   <input type="text" class="form-control" id="PCBsingleUnits" name="PCBsingleUnits">
                 </div>
               </div>
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-2">
                   <label for="PCBrouting">Routing</label>
                   <input type="text" class="form-control" id="PCBrouting" name="PCBrouting">
                 </div>
               </div>
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-2">
                   <label for="PCBarray">Array</label>
                   <input type="text" class="form-control" id="PCBarray" name="PCBarray">
                 </div>

@@ -114,62 +114,62 @@
           </ol>
           <form>
             <fieldset>
-              <legend>Info About You</legend>
+              <legend>personal info</legend>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="fName">First Name</label>
-                  <input type="text" class="form-control" id="fName">
+                  <input type="text" class="form-control" id="fName" name="fName">
                 </div>
               </div>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="lName">Last Name</label>
-                  <input type="text" class="form-control" id="lName">
+                  <input type="text" class="form-control" id="lName" name="fName">
                 </div>
               </div>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="eAddy">Email</label>
-                  <input type="email" class="form-control" id="eAddy">
+                  <input type="email" class="form-control" id="eAddy" name="eAddy">
                 </div>
               </div>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="fone">Phone</label>
-                  <input type="tel" class="form-control" id="fone">
+                  <input type="tel" class="form-control" id="fone" name="fone">
                 </div>
               </div>
             </fieldset>
 
             <fieldset>
-              <legend>Company Info</legend>
-              <div class="col-xs-6">
-                <div class="form-group">
+              <legend>company info</legend>
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="cName">Company Name</label>
-                  <input type="text" class="form-control" id="cName">
+                  <input type="text" class="form-control" id="cName" name="cName">
                 </div>
               </div>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="address">Address</label>
-                  <input type="text" class="form-control" id="address">
+                  <input type="text" class="form-control" id="address" name="address">
                 </div>
               </div>
 
-              <div class="col-xs-6">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-6">
                   <label for="city">City</label>
-                  <input type="text" class="form-control" id="city">
+                  <input type="text" class="form-control" id="city" name="city">
                 </div>
               </div>
 
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-2">
                   <label for="st">ST</label>
                   <select class="form-control" id="st" name="st">
                     <option value="">N/A</option>
@@ -229,10 +229,43 @@
                 </div>
               </div>
 
-              <div class="col-xs-4">
-                <div class="form-group">
+              <div class="form-group">
+                <div class="col-xs-4">
                   <label for="zip">Zip</label>
-                  <input type="text" class="form-control" id="zip">
+                  <input type="text" class="form-control" id="zip" name="city">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Stencil Info</legend>
+              
+              <div class="form-group">
+                <div class="col-xs-3">
+                  <label for="date">Date Needed By</label>
+                  <!-- Designer's Note: Should use Modernizr to detect implemenation. However, per client, forms are a low priority on this project, so we move on. -->
+                  <input type="date" class="form-control" id="date" name="date">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-xs-3">
+                  <label for="file">Upload Stencil File</label>
+                  <input type="file" id="file" name="file">
+                </div>
+              </div>
+
+            <div class="form-group">
+                <div class="col-xs-2">
+                  <label for="quantity">Quantity</label>
+                  <input type="text" class="form-control" id="quantity" name="quantity">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-xs-4">
+                  <label for="comments">Comments/Special Instructions</label>
+                  <textarea class="form-control" rows="3" id="comments" name="comments"></textarea>
                 </div>
               </div>
             </fieldset>
