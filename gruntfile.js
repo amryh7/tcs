@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 				relaxerror: ['W003'],
 				showallerrors: true
 			},
-			files: ['src/*.html']
+			files: ['src/**/*.html']
 		},
 		csslint: {
 			options: {

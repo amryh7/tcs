@@ -34,7 +34,6 @@ main {
 	background-size: cover;
 	
 	/* some box shadow for good fun */
-	box-shadow: rgba(0, 0, 0, 0.20) 0 10px 10px;
 	padding: 8px 20px;
 }
 
@@ -60,6 +59,10 @@ h3,
 
 .tcs-img-circle:hover {
 	border-width: thick;
+}
+
+.tcs-img-rounded {
+	box-shadow: rgba(0, 0, 0, 0.20) 0 3px 3px;
 }
 
 .tcs-pull-left {
