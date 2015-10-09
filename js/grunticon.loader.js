@@ -70,4 +70,4 @@
   e.embedIcons = i, e.getCSS = a, e.getIcons = c, e.ready = o, e.svgLoadedCallback = u, e.embedSVG = u
 })(grunticon, this);
 
-grunticon([cssPath + "/icons.data.svg.css", "/css/icons.data.png.css", "/css/icons.fallback.css"]);
+grunticon([cssPath + "icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
