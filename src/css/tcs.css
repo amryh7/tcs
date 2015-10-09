@@ -1,9 +1,11 @@
 body {
 	background-color: rgb(224, 247, 254);
+	min-width: 1200px;
 }
 
 header {
 	padding: 3px;
+	margin-bottom: 20px;
 }
 
 .tcs-header-address,
@@ -11,11 +13,11 @@ header {
 	margin-bottom: 8px;
 }
 
-.tcs-container {
+.tcs-container-fluid {
 	background: url("../img/bg.png") no-repeat center center fixed;
 	background-size: cover;
-	border-radius: 8px;
-	padding: 16px;
+
+	padding: 2% 8%;
 }
 
 /* Designer's Note: Attempted to use .container .row:first-child (and first-of-type). However, this recursively grabed too many rows. */
@@ -102,7 +104,7 @@ ul {
 }
 
 @media screen and (min-resolution: 2dppx) {
-	.container {
+	.tcs-container-fluid {
 		background: url("../img/bg@2x.png") no-repeat center center fixed;
 	}
 }
