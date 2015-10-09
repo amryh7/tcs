@@ -1,5 +1,7 @@
 body {
 	background-color: rgb(224, 247, 254);
+	border-top: solid 20px #337ab7;
+	padding-top: 8px;
 	min-width: 1200px;
 }
 
