@@ -24,6 +24,19 @@
     position: relative;
   }
     
+  .left-rect,
+  .right-rect {
+    height: 48px;
+    position: absolute;
+    width: 8.5%;
+    z-index: 1;
+  }
+
+  .right-rect {
+    right: 0;
+    top: 0; /* For some reason, this is necessary to get the correct alignment for this <div>. */
+  }
+
   .inf-bg-image {
     /* Actual animation div. */
     -moz-animation: slider 60s linear infinite;
@@ -37,20 +50,7 @@
     /* center this within .inf-bg-img-wrapper */
     width: 3210px;
   }
-  
-  .left-rect,
-  .right-rect {
-    height: 48px;
-    position: absolute;
-    width: 8.5%;
-    z-index: 1;
-  }
-
-  .right-rect {
-    right: 0;
-    top: 0; /* For some reason, this is necessary to get the correct alignment for this <div>. */
-  }
-  
+    
   .tcs-container-fluid {
     margin-top: 20px;
     /* height of .inf-bg-image + 20px */
@@ -131,7 +131,7 @@
 
             <li><a href="http://www.facebook.com/componentstore" class="icon-link" target="_blank"><span class="icon icon-fb img-circle"></span></a></li>
             <li><a href="https://www.linkedin.com/company/the-component-store-llc?trk=top_nav_home" class="icon-link" target="_blank"><span class="icon icon-li img-circle"></span></a></li>
-            <li><a href="https://twitter.com/component_store" class="icon-link"><span class="icon icon-tw img-circle" target="_blank"></span></a></li>
+            <li><a href="https://twitter.com/component_store" class="icon-link" target="_blank"><span class="icon icon-tw img-circle"></span></a></li>
             <li><a href="https://plus.google.com/115223555002290784888/about" class="icon-link" target="_blank"><span class="icon icon-gp img-circle"></span></a></li>
           </ul>
         </div>
