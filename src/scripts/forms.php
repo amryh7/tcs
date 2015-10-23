@@ -1,0 +1,2 @@
+/* Process all forms inside src/get-a-quote. 'Basic' validation is fine - no specific requirements. Compile and send email to: info@visionwebsoft.com for testing purposes. 
+The email format is just a simple list - no special requirements. */
