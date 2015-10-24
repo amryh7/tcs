@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(224, 247, 254);
-	border-top: solid 20px #337ab7;
+	border-top: solid 20px #5bc0d3;
 	padding-top: 8px;
 	min-width: 1200px;
 }
@@ -60,6 +60,10 @@ header {
 .icon-large {
 	height: 96px;
 	width: 96px;
+}
+
+.nav-pills {
+	font-weight: bold;
 }
 
 main {
