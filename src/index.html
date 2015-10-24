@@ -23,7 +23,7 @@
     height: 48px;
     position: relative;
   }
-    
+  
   .left-rect,
   .right-rect {
     height: 48px;
@@ -31,12 +31,13 @@
     width: 8.5%;
     z-index: 1;
   }
-
+  
   .right-rect {
     right: 0;
-    top: 0; /* For some reason, this is necessary to get the correct alignment for this <div>. */
+    top: 0;
+    /* For some reason, this is necessary to get the correct alignment for this <div>. */
   }
-
+  
   .inf-bg-image {
     /* Actual animation div. */
     -moz-animation: slider 60s linear infinite;
@@ -50,7 +51,7 @@
     /* center this within .inf-bg-img-wrapper */
     width: 3210px;
   }
-    
+  
   .tcs-container-fluid {
     margin-top: 20px;
     /* height of .inf-bg-image + 20px */
@@ -76,13 +77,13 @@
   
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi) {
-     .inf-bg-image {
-    /* Actual animation div. */
-    background: url(img/logos/slider@2x.png);
+    .inf-bg-image {
+      /* Actual animation div. */
+      background: url(img/logos/slider@2x.png);
       background-size: 3210px 32px;
-    /* Match dimensions of 'standard' div */
+      /* Match dimensions of 'standard' div */
+    }
   }
-}
   </style>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -114,29 +115,35 @@
         <div class="text-center"><i>Technology, speed, commitment.<br><!-- Designer's Note: We use a <br> tag as this 'slogan,' if you will, is always displayed with that line break - therefore it's part of the content. -->
         
         Your quick turn specialist for printed circuit boards &amp; other needs.</i>
-        <address class="tcs-header-address"><a href="mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>&nbsp;•&nbsp;602.403.0343</address>
+          <address class="tcs-header-address"><a href="mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>&nbsp;•&nbsp;602.403.0343</address>
 
-        <div role="navigation">
-          <ul class="nav tcs-nav-inline">
-            <li>
-              <button class="btn btn-info btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">get quote&nbsp;<span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li role="presentation"><a href="get-a-quote/pcbs.html">PCBs</a></li>
-                <li role="presentation"><a href="get-a-quote/magnetics.html">magnetics</a></li>
-                <li role="presentation"><a href="get-a-quote/polymer-stencils.html">polymer stencils</a></li>
-                <li role="presentation"><a href="get-a-quote/test-equipment.html">test equipment</a></li>
-              </ul>
-            </li>
+          <div role="navigation">
+            <ul class="nav tcs-nav-inline">
+              <li>
+                <button class="btn btn-info btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">get quote&nbsp;<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li role="presentation"><a href="get-a-quote/pcbs.html">PCBs</a></li>
+                  <li role="presentation"><a href="get-a-quote/magnetics.html">magnetics</a></li>
+                  <li role="presentation"><a href="get-a-quote/polymer-stencils.html">polymer stencils</a></li>
+                  <li role="presentation"><a href="get-a-quote/test-equipment.html">test equipment</a></li>
+                </ul>
+              </li>
 
-            <li><a href="http://www.facebook.com/componentstore" class="icon-link" target="_blank"><span class="icon icon-fb img-circle"></span></a></li>
-            <li><a href="https://www.linkedin.com/company/the-component-store-llc?trk=top_nav_home" class="icon-link" target="_blank"><span class="icon icon-li img-circle"></span></a></li>
-            <li><a href="https://twitter.com/component_store" class="icon-link" target="_blank"><span class="icon icon-tw img-circle"></span></a></li>
-            <li><a href="https://plus.google.com/115223555002290784888/about" class="icon-link" target="_blank"><span class="icon icon-gp img-circle"></span></a></li>
-          </ul>
+              <li><a href="http://www.facebook.com/componentstore" class="icon-link"
+                target="_blank"><span class="icon icon-fb img-circle"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/the-component-store-llc?trk=top_nav_home"
+                class="icon-link" target="_blank"><span class="icon icon-li img-circle"></span></a></li>
+              <li>
+                <a href="https://twitter.com/component_store" class="icon-link" target="_blank"><span class="icon icon-tw img-circle"></span></a>
+              </li>
+              <li><a href="https://plus.google.com/115223555002290784888/about" class="icon-link"
+                target="_blank"><span class="icon icon-gp img-circle"></span></a></li>
+            </ul>
+          </div>
         </div>
-      </div><!-- /.text-center -->
-    </div>
+        <!-- /.text-center -->
+      </div>
   </header>
 
   <div class="inf-bg-img-wrapper">
@@ -230,7 +237,10 @@
               </figure>
             </div>
           </main>
-          <footer class="text-center">
+          
+        </div>
+        <!-- /col-xs-10 -->
+      </div><footer class="text-center">
             <address>
               &copy;2015 <i>the component store</i> (tcs) - 'Simply Resourceful'
               <br>
@@ -239,9 +249,6 @@
 
             <small>Website Hosting &amp; Design by: <a href="http://visionwebsoft.com" target="_blank">Vision WebSoft - <code>var greatResults = ourCode(yourVision);</code></a></small>
           </footer>
-        </div>
-        <!-- /col-xs-10 -->
-      </div>
     </div>
     <!-- /nav-side-main-wrapper -->
   </div>
