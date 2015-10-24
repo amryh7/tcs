@@ -125,7 +125,8 @@
               <li>get a quote</li>
               <li class="active">polymer stencils</li>
             </ol>
-            <form>
+            <form action="form-parsing.php">
+              <input type="hidden" id="form-type" name="form-type" value="stencils">
               <fieldset>
                 <legend>personal info</legend>
 
@@ -139,7 +140,7 @@
                 <div class="form-group">
                   <div class="col-xs-6">
                     <label for="lName">Last Name</label>
-                    <input type="text" class="form-control" id="lName" name="fName">
+                    <input type="text" class="form-control" id="lName" name="lName">
                   </div>
                 </div>
 
@@ -245,7 +246,7 @@
                 <div class="form-group">
                   <div class="col-xs-4">
                     <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip" name="city">
+                    <input type="text" class="form-control" id="zip" name="zip">
                   </div>
                 </div>
               </fieldset>
@@ -282,6 +283,7 @@
                   </div>
                 </div>
               </fieldset>
+              <input type="submit" id="form-submit-btn" name="form-submit-btn" value="Submit">
             </form>
           </main>
 
