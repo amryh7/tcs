@@ -1,8 +1,21 @@
+/* Designer's Note: .short-page is to make background fill up the entire height of the screen. It is designated a special class only as needed as these styles tend to 'screw up' 'long' pages. Therefore, this could be considered a hack. */
+.short-page,
+.short-page body,
+.short-page .tcs-container-fluid {
+	height: 100%;
+}
+
+.tcs-container-fluid {
+	background: url("../img/bg.png") no-repeat center center fixed;
+	background-size: cover;
+	padding: 2% 8%;
+}
+
 body {
 	background-color: rgb(224, 247, 254);
 	border-top: solid 20px #5bc0d3;
-	padding-top: 8px;
 	min-width: 1200px;
+	padding-top: 8px;
 }
 
 header {
@@ -19,12 +32,7 @@ header {
 	display: block; /* place each on separate line. */
 }
 
-.tcs-container-fluid {
-	background: url("../img/bg.png") no-repeat center center fixed;
-	background-size: cover;
-	height: 700px;
-	padding: 2% 8%;
-}
+
 
 /* Designer's Note: Attempted to use .container .row:first-child (and first-of-type). However, this recursively grabed too many rows. */
 .nav-side-main-wrapper  {  
@@ -126,6 +134,6 @@ ul {
 
 @media screen and (min-resolution: 2dppx) {
 	.tcs-container-fluid {
-		background: url("../img/bg@2x.png") no-repeat center center fixed;
+		background-image: url("../img/bg@2x.png");
 	}
 }
