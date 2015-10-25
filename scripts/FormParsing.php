@@ -238,7 +238,7 @@ echo ($_REQUEST['file']) . "<br>";
 
 //START CODING --  START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- START CODING -- 
 
-		// createing array of chars to strip from inupt is present
+		// creating array of chars to strip from input is present
 		// used in str_replace()
 $stripChrs = array("<", ">", "!", "$", "%", "*", "{", "}", "|");
 
@@ -301,9 +301,9 @@ switch ($form) {
 		$comments =  str_replace($stripChrs, "", $_REQUEST['comments']);
 				$quote_array[comments] = $comments;
 				
-		require_once('auto-mail.php');
+		require_once('AutoMail.php');
 		auto_mail($quote_array);
-		require_once('quote-submit.html');
+		require_once('../get-a-quote/quote-submit.html');
         break;
     case "pcbs":
 				// testing switch for pcbs
@@ -346,9 +346,9 @@ switch ($form) {
 		$PCBarray =  str_replace($stripChrs, "", $_REQUEST['PCBarray']);
 				$quote_array[PCBarray] = $PCBarray;
 				
-		require_once('auto-mail.php');
+		require_once('AutoMail.php');
 		auto_mail($quote_array);
-		require_once('quote-submit.html');
+		require_once('../get-a-quote/quote-submit.html');
         break;
     case "stencils":
 				// testing switch for stencils
@@ -363,9 +363,9 @@ switch ($form) {
 		$comments =  str_replace($stripChrs, "", $_REQUEST['comments']);
 				$quote_array[comments] = $comments;
 				
-		require_once('auto-mail.php');
+		require_once('AutoMail.php');
 		auto_mail($quote_array);
-		require_once('quote-submit.html');
+		require_once('../get-a-quote/quote-submit.html');
         break;
     case "equipment":
 				// testing switch for equipment
@@ -380,15 +380,15 @@ switch ($form) {
 		$file =  str_replace($stripChrs, "", $_REQUEST['file']);
 				$quote_array[file] = $file;
 				
-		require_once('auto-mail.php');
+		require_once('AutoMail.php');
 		auto_mail($quote_array);
-		require_once('get-a-quote/quote-submit.html');
+		require_once('../get-a-quote/quote-submit.html');
         break;
     default:
 				// testing switch for 'no match' case
 				//echo '<script language="javascript">alert("NO FORM WAS FOUND")</script>';
 		
-			//require_once('quote-submit.html'); 												TODO=> make fail to submit page
+			//require_once('../get-a-quote/quote-submit.html'); 												TODO=> make fail to submit page
 		
 	};
 ?>
