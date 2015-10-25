@@ -18,7 +18,7 @@ header {
 .tcs-container-fluid {
 	background: url("../img/bg.png") no-repeat center center fixed;
 	background-size: cover;
-
+	height: 700px;
 	padding: 2% 8%;
 }
 
