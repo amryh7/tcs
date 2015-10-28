@@ -3,7 +3,7 @@
 
 function auto_mail($quote_array){
 				// multiple recipients
-	$to = 'manavm@visionwebsoft.com'; // note the comma for multiple recipients
+	//$to = 'manavm@visionwebsoft.com'; // note the comma for multiple recipients
 				// email for quotes taken from current quote form...
 				// http://thecomponentstore.net/quotes.php
 				// view source->line 338: <a href="mailto:sales@thecomponentstore.com">sales@thecomponentstore.com</a>
@@ -117,7 +117,13 @@ function auto_mail($quote_array){
               <div class="form-group">
                 <div class="col-xs-3">
                   <h4 style="display: inline">Upload An Attachment: </h4>
-					  '. $quote_array['file'] .'
+					  ';
+					  if($quote_array['file']){
+							$message .= $quote_array['file'];
+					  } else {
+							$message .= "No File Attached";
+					  };
+		$message .= '</div>
                 </div>
               </div>
               <div class="form-group">
@@ -257,8 +263,13 @@ function auto_mail($quote_array){
                 <div class="form-group">
                   <div class="col-xs-3">
                     <h4 style="display: inline">Upload Stencil File: </h4>
-					  '. $quote_array['file'] .'
-                  </div>
+					  ';
+					  if($quote_array['file']){
+							$message .= $quote_array['file'];
+					  } else {
+							$message .= "No File Attached";
+					  };
+		$message .= '</div>
                 </div>
 
                 <div class="form-group">
@@ -306,23 +317,21 @@ function auto_mail($quote_array){
              <div class="form-group">
                 <div class="col-xs-3">
                   <h4 style="display: inline">Upload An Attachment: </h4>
-					  '. $quote_array['file'] .'
+					  ';
+					  if($quote_array['file']){
+							$message .= $quote_array['file'];
+					  } else {
+							$message .= "No File Attached";
+					  };
+		$message .= '</div>
                 </div>
               </div>';
 		default:
 	};
 		
 	$message .= '
-			
 			</body>
-		</html>
-		';
-
-
-
-
-
-
+		</html>';
 				// Sending mail 
 	//mail($to, $subject, $message, $headers);
 	//----------------------------------------------------------------------------------
@@ -339,20 +348,22 @@ function auto_mail($quote_array){
     $header .= "Content-type:text/html; charset=iso-8859-1\r\n";
     $header .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
     $header .= $message."\r\n\r\n";
+	if($quote_array['file']){
+		$file = $quote_array['file'];
+		$filename = basename($file);
+		$file_size = filesize($file);
+		$handle = fopen($file, "r");
+		$content = fread($handle, $file_size);
+		fclose($handle);
+		$content = chunk_split(base64_encode($content));
 
-	$file = $quote_array['file'];
-    $filename = basename($file);
-    $file_size = filesize($file);
-    $handle = fopen($file, "r");
-    $content = fread($handle, $file_size);
-    fclose($handle);
-    $content = chunk_split(base64_encode($content));
+		$header .= "--".$hash."\r\n";
+		$header .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n"; 
+		$header .= "Content-Transfer-Encoding: base64\r\n";
+		$header .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
+		$header .= $content."\r\n\r\n";
+	};
 
-    $header .= "--".$hash."\r\n";
-    $header .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n"; 
-    $header .= "Content-Transfer-Encoding: base64\r\n";
-    $header .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
-    $header .= $content."\r\n\r\n";
 
     $header .= "--".$hash."--";
 	    // $message is already in header
