@@ -1,3 +1,4 @@
+
 /* Designer's Note: .short-page is to make background fill up the entire height of the screen. It is designated a special class only as needed as these styles tend to 'screw up' 'long' pages. Therefore, this could be considered a hack. */
 .short-page,
 .short-page body,
@@ -18,9 +19,15 @@ body {
 	padding-top: 8px;
 }
 
+header,
+figcaption {
+	font-weight: bold;
+}
+
 header {
-	padding: 3px;
+	font-weight: bold;
 	margin-bottom: 20px;
+	padding: 3px;
 }
 
 .tcs-header-address,
@@ -31,8 +38,6 @@ header {
 .tcs-nav-inline .dropdown-menu li {
 	display: block; /* place each on separate line. */
 }
-
-
 
 /* Designer's Note: Attempted to use .container .row:first-child (and first-of-type). However, this recursively grabed too many rows. */
 .nav-side-main-wrapper  {  
