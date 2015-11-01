@@ -1,8 +1,11 @@
 
 /* Designer's Note: .short-page is to make background fill up the entire height of the screen. It is designated a special class only as needed as these styles tend to 'screw up' 'long' pages. Therefore, this could be considered a hack. */
-.short-page,
-.short-page body,
-.short-page .tcs-container-fluid {
+html {
+	min-height: 100%;
+}
+
+body,
+.tcs-container-fluid {
 	height: 100%;
 }
 
@@ -150,10 +153,12 @@ ul {
 }
 
 @media screen and (min-resolution: 2dppx) {
-	.tcs-container-fluid {
+/*	.tcs-container-fluid {
 		background-image: url("../img/bg@2x.png");
-	}
+		background-size: cover;
 
+	}
+*/
 	.icon-recycle {
 		background-image: url("../img/recycle@2x.png");
 		background-size: 50px 48px; /* Must match width/height of div as given by line 74. */
