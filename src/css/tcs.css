@@ -1,8 +1,4 @@
 /* Helps insure full compliance with subsequent 'height: 100%' to display full screen background. */
-html {
-	overflow-y: auto;
-}
-
 html,
 body,
 .tcs-container-fluid {
