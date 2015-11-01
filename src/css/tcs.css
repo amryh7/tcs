@@ -1,8 +1,9 @@
 /* Helps insure full compliance with subsequent 'height: 100%' to display full screen background. */
-html { 
-	min-height: 100%; 
+html {
+	overflow-y: auto;
 }
 
+html,
 body,
 .tcs-container-fluid {
 	height: 100%;
@@ -10,7 +11,7 @@ body,
 
 .tcs-container-fluid {
 	background: url("../img/bg.png") no-repeat center center fixed;
-	background-size: 100%;
+	background-size: cover;
 	padding: 2% 8%;
 }
 
@@ -154,8 +155,6 @@ ul {
 @media screen and (min-resolution: 2dppx) {
 	.tcs-container-fluid {
 		background-image: url("../img/bg@2x.png");
-		background-size: cover;
-
 	}
 
 	.icon-recycle {
