@@ -1,14 +1,14 @@
 
 /* Designer's Note: .short-page is to make background fill up the entire height of the screen. It is designated a special class only as needed as these styles tend to 'screw up' 'long' pages. Therefore, this could be considered a hack. */
-.short-page,
-.short-page body,
-.short-page .tcs-container-fluid {
+html,
+body,
+.tcs-container-fluid {
 	height: 100%;
 }
 
 .tcs-container-fluid {
 	background: url("../img/bg.png") no-repeat center center fixed;
-	background-size: cover;
+	background-size: 100%;
 	padding: 2% 8%;
 }
 
