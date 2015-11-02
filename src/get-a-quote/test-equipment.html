@@ -124,7 +124,7 @@
             <li>get a quote</li>
             <li class="active">test equipment</li>
           </ol>
-          <form action="../scripts/FormParsing.php">
+          <form action="../scripts/FormParsing.php" method="post">
             <input type="hidden" id="form-type" name="form-type" value="equipment">
             <fieldset>
               <legend>personal info</legend>
@@ -264,7 +264,7 @@
                 <div class="col-xs-3">
                   <label for="terms">Quote Terms&nbsp;<span class="caret"></span></label>
                   <select class="form-control" id="terms" name="terms">
-                    <option value="Buy">Buy</option>
+                    <option value="Buy" selected>Buy</option>
                         <option value="Rent">Rent</option>
                         <option value="Lease">Lease</option>
                         <option value="Sell/Trade-In">Sell/Trade-In</option>
@@ -279,7 +279,7 @@
                     <option value="Transportation">Transportation</option>
                         <option value="Military">Military</option>
                         <option value="Semiconductor">Semiconductor</option>
-                        <option value="Other">Other</option>
+                        <option value="Other" selected>Other</option>
                   </select>
                 </div>
               </div>
