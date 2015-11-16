@@ -17,4 +17,5 @@ $(document).ready(function() {
 	// Use .style.property to change the height property of <html>. 
 	html.style.height = docHeight;
 	console.log(html.style.height);
+
 });
