@@ -127,68 +127,60 @@
           <form action="../scripts/FormParsing.php" method="post">
             <input type="hidden" id="form-type" name="form-type" value="equipment">
             <fieldset>
-              <legend>personal info</legend>
-
+              <legend>Personal Info</legend>
+			  
               <div class="form-group">
                 <div class="col-xs-6">
                   <label for="fName">First Name</label>
                   <input type="text" class="form-control" id="fName" name="fName" required>
                 </div>
-              </div>
-
-              <div class="form-group">
+				
                 <div class="col-xs-6">
                   <label for="lName">Last Name</label>
                   <input type="text" class="form-control" id="lName" name="lName" required>
                 </div>
               </div>
-
+			  
               <div class="form-group">
                 <div class="col-xs-6">
                   <label for="eAddy">Email</label>
                   <input type="email" class="form-control" id="eAddy" name="eAddy" required>
                 </div>
-              </div>
-
-              <div class="form-group">
                 <div class="col-xs-6">
                   <label for="fone">Phone</label>
                   <input type="tel" class="form-control" id="fone" name="fone" required>
                 </div>
               </div>
             </fieldset>
-
+			
             <fieldset>
-              <legend>company info</legend>
+              <legend>Company Info</legend>
               <div class="form-group">
                 <div class="col-xs-6">
                   <label for="cName">Company Name</label>
                   <input type="text" class="form-control" id="cName" name="cName" required>
                 </div>
-              </div>
-
-              <div class="form-group">
+				
                 <div class="col-xs-6">
                   <label for="address">Address</label>
                   <input type="text" class="form-control" id="address" name="address">
                 </div>
               </div>
-
+			  
               <div class="form-group">
                 <div class="col-xs-6">
                   <label for="city">City</label>
                   <input type="text" class="form-control" id="city" name="city">
                 </div>
-              </div>
-
-              <div class="form-group">
+				
                 <div class="col-xs-2">
                   <label for="st">ST</label>
                   <select class="form-control" id="st" name="st">
+                    <option value="">N/A</option>
                     <option value="AK">Alaska</option>
                     <option value="AL">Alabama</option>
                     <option value="AR">Arkansas</option>
-                    <option value="AZ" selected>Arizona</option>
+                    <option value="AZ">Arizona</option>
                     <option value="CA">California</option>
                     <option value="CO">Colorado</option>
                     <option value="CT">Connecticut</option>
@@ -239,60 +231,56 @@
                     <option value="WY">Wyoming</option>
                   </select>
                 </div>
-              </div>
-
-              <div class="form-group">
+				
                 <div class="col-xs-4">
                   <label for="zip">Zip</label>
                   <input type="text" class="form-control" id="zip" name="zip">
                 </div>
               </div>
             </fieldset>
-
+			
             <fieldset>
-              <legend>test equipment info</legend>
+              <legend>Test Equipment Info</legend>
               <div class="form-group">
                 <div class="col-xs-12">
                   <label for="details">Details</label>
-                  <p class="help-block">Please prove manufacturer and model or specifications of testing.  Looking to Sell? Please include serial numbers whenever possible.</p>
+                  <p class="help-block">Please provide manufacturer and model or specifications of testing.  Looking to Sell? Please include serial numbers whenever possible.</p>
                   <textarea class="form-control" rows="3" id="details" name="details"></textarea>
-                 
+				  
                 </div>
               </div>
-
+			  
               <div class="form-group">
                 <div class="col-xs-3">
-                  <label for="terms">Quote Terms&nbsp;<span class="caret"></span></label>
+                  <label for="terms">Quote Terms</label>
                   <select class="form-control" id="terms" name="terms">
-                    <option value="Buy" selected>Buy</option>
-                        <option value="Rent">Rent</option>
-                        <option value="Lease">Lease</option>
-                        <option value="Sell/Trade-In">Sell/Trade-In</option>
+                    <option value="Buy">Buy</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Lease">Lease</option>
+                    <option value="Sell">Sell/Trade-In</option>
                   </select>
+				  
                 </div>
-              </div>
-
-              <div class="form-group">
+				
                 <div class="col-xs-3">
-                  <label for="industry">Industry&nbsp;<span class="caret"></span></label>
+                  <label for="industry">Industry</label>
                   <select class="form-control" id="industry" name="industry">
-                    <option value="Transportation">Transportation</option>
-                        <option value="Military">Military</option>
-                        <option value="Semiconductor">Semiconductor</option>
-                        <option value="Other" selected>Other</option>
+                    <option value="Trans">Transportation</option>
+                    <option value="Mili">Military</option>
+                    <option value="Semi">Semiconductor</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
-              </div>
-
-             <div class="form-group">
+				
                 <div class="col-xs-3">
                   <label for="file">Upload An Attachment</label>
-                  <input type="file" id="file" name="file" disabled>
+                  <input type="file" id="file" name="file">
                 </div>
               </div>
-              
             </fieldset>
-            <input type="submit" id="form-submit-btn" name="form-submit-btn" value="Submit">
+				<div class="col-xs-6">
+                  <input type="submit" id="form-submit-btn" name="magnetics-submit-btn" value="Submit" class="btn btn-info btn-sm" style="margin-top:10px;width:100%;">
+				</div>
           </form>
         </main>
         <footer class="text-center">
