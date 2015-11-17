@@ -3,8 +3,8 @@
 
 function auto_mail($quote_array){
 				// multiple recipients
-	$to = 'amryh7@gmail.com';
-	$replyto = 'amryh7@gmail.com';
+	$to = 'sales@thecomponentstore.com, daniel@thecomponentstore, manavm@visionwebsoft.com ';
+	$replyto = 'sales@thecomponentstore.com';
 	//$to = 'manavm@visionwebsoft.com'; // note the comma for multiple recipients
 				// email for quotes taken from current quote form...
 				// http://thecomponentstore.net/quotes.php
