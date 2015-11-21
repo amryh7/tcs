@@ -39,6 +39,7 @@ module.exports = function(grunt) {
 					'get-a-quote/polymer-stencils.html': 'src/get-a-quote/polymer-stencils.html', // 'destination': 'source' 
 					'get-a-quote/magnetics.html': 'src/get-a-quote/magnetics.html', // 'destination': 'source' 
 					'get-a-quote/test-equipment.html': 'src/get-a-quote/test-equipment.html', // 'destination': 'source'
+					'services/flex-circuits.html': 'src/services/flex-circuits.html', // 'destination': 'source' 
 					'services/pcbs.html': 'src/services/pcbs.html', // 'destination': 'source' 
 					'services/polymer-stencils.html': 'src/services/polymer-stencils.html', // 'destination': 'source' 
 					'services/magnetics.html': 'src/services/magnetics.html', // 'destination': 'source' 
