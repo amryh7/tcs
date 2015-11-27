@@ -334,53 +334,41 @@ function auto_mail($quote_array){
 			</body>
 		</html>';
 		
-				// Sending mail 
-	if($quote_array['file'] == 'none'){
-		
+	// Sending mail
+	// if no file attachment - send message only
+	if($quote_array['file'] == "none"){
+		$hash = md5(date('r', time()));
+
 		$header = 'From: Request for Quote <The_Component_Store@TCS.com>' . "\r\n";
 		$header .= "Reply-To: ".$replyto."\r\n";
 					// To send HTML mail, the Content-type header must be set
 		$header .= "MIME-Version: 1.0\r\n";
 					// Additional headers
-		$header .= "Content-type:text/html; charset=iso-8859-1\r\n";
-			// $message is already in header
-		return mail($to, $subject, $message, $header);
-	
-	
-	} else {
-	
-	
-	$hash = md5(uniqid(time()));
-
-    $header = 'From: Request for Quote <The_Component_Store@TCS.com>' . "\r\n";
-    //$header .= "Reply-To: ".$replyto."\r\n";
-				// To send HTML mail, the Content-type header must be set
-    $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-Type: multipart/mixed; boundary=\"".$hash."\"\r\n";
-				// Additional headers
-    $header .= "This is a multi-part message in MIME format.\r\n";
-    $header .= "--".$hash."\r\n";
-    $header .= "Content-type:text/html; charset=iso-8859-1\r\n";
-    $header .= "Content-Transfer-Encoding: 7bit\r\n";/*
-	if($quote_array['file']){
-		$file = $quote_array['file'];
-		$filename = basename($file);
-		$file_size = filesize($file);
-		$handle = fopen($file, "r");
-		$content = fread($handle, $file_size);
-		fclose($handle);
-		$content = chunk_split(base64_encode($content));
-
+		$header .= "Content-Type: multipart/mixed; boundary=\"".$hash."\"\r\n";
 		$header .= "--".$hash."\r\n";
-		$header .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n"; 
-		$header .= "Content-Transfer-Encoding: base64\r\n";
-		$header .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
-		$header .= $content."\r\n\r\n";
-		    $header .= "--".$hash."--";
-	    // $message is already in header
-    return mail($to, $subject, $message, $header);
-	};*/
-	};
+		$header .= "Content-type:text/html; charset=iso-8859-1\r\n";
+
+		return mail($to, $subject, $message, $header);
+		
+	// if file attachment - send message only
+	// with this 'else' you can add code to make testing easier
+	// !!! as of now this 'else' does the same as the if with no attachment
+	// so it just sends an email with no attachment, even if the client attaches an email
+	// this is not a solution, just a fix to getting all the email though
+	} else {
+		$hash = md5(date('r', time()));
+
+		$header = 'From: Request for Quote <The_Component_Store@TCS.com>' . "\r\n";
+		$header .= "Reply-To: ".$replyto."\r\n";
+					// To send HTML mail, the Content-type header must be set
+		$header .= "MIME-Version: 1.0\r\n";
+					// Additional headers
+		$header .= "Content-Type: multipart/mixed; boundary=\"".$hash."\"\r\n";
+		$header .= "--".$hash."\r\n";
+		$header .= "Content-type:text/html; charset=iso-8859-1\r\n";
+		
+		return mail($to, $subject, $message, $header);
+	}
 };
 ?>
 
